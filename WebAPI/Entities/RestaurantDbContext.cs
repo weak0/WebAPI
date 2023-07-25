@@ -14,13 +14,8 @@ namespace WebAPI.Entities
         {
             modelBuilder.Entity<Restaurant>()
                 .Property(r => r.Name)
-                .IsRequired()
                 .HasMaxLength(25);
-            modelBuilder.Entity<Dish>(entity =>
-            {
-                entity.Property(d => d.Name).IsRequired();
-                entity.Property(d => d.ResturantId).IsRequired(false);
-            });
+
  
 
         }

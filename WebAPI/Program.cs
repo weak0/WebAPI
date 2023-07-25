@@ -1,5 +1,8 @@
+using AutoMapper;
 using WebAPI;
+using WebAPI.Controllers;
 using WebAPI.Entities;
+using WebAPI.Serivces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,9 +11,10 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddSingleton<IWeatrherForcastSerivces, WeatrherForcastSerivces>();
 builder.Services.AddDbContext<RestaurantDbContext>();
 builder.Services.AddScoped<RestaurantSeeder>();
+builder.Services.AddAutoMapper(typeof(Program));
+builder.Services.AddScoped<IRestauranServices, RestauranServices>();
 
 var app = builder.Build();
 
