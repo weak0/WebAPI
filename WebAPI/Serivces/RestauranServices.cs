@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Server.IIS.Core;
 using Microsoft.EntityFrameworkCore;
 using WebAPI.Entities;
+using WebAPI.Exepction;
 using WebAPI.Models;
 
 namespace WebAPI.Serivces
@@ -9,10 +11,12 @@ namespace WebAPI.Serivces
     {
         private readonly RestaurantDbContext _dbContext;
         private readonly IMapper _mapper;
-        public RestauranServices(RestaurantDbContext dbContext, IMapper mapper)
+        private readonly ILogger<RestauranServices> _logger;
+        public RestauranServices(RestaurantDbContext dbContext, IMapper mapper, ILogger<RestauranServices> logger)
         {
             _dbContext = dbContext;
             _mapper = mapper;
+            _logger = logger;
         }
         public RestaurantDto GetById(int id)
         {
@@ -22,7 +26,7 @@ namespace WebAPI.Serivces
             .FirstOrDefault(x => x.Id == id);
             if (restaurant == null)
             {
-                return null;
+                throw new NotFoundExeption("restaurant  not found");
             }
             return _mapper.Map<RestaurantDto>(restaurant);
         }
@@ -45,27 +49,30 @@ namespace WebAPI.Serivces
             _dbContext.SaveChanges();
             return restaurant.Id;
         }
-        public bool Delete(int id)
+        public void Delete(int id)
         {
+            //_logger.LogError(new Exception("error"), $"Restaruant with id: {id} Delete action invoked");
             var restaurant = _dbContext.Restaurants
             .FirstOrDefault(x => x.Id == id);
 
-            if (restaurant == null) return false;
+            if (restaurant == null) 
+                throw new NotFoundExeption("restaurant not found");
             _dbContext.Remove(restaurant);
             _dbContext.SaveChanges();
-            return true;
         }
 
-        public bool UpdateRestaurant(UpdateRestaurantDto dto)
+        public void UpdateRestaurant(UpdateRestaurantDto dto)
         {
             var restaurant = _dbContext.Restaurants
             .FirstOrDefault(x => x.Id == dto.Id);
-            if (restaurant == null) return false;
+
+            if (restaurant == null)
+            throw new NotFoundExeption("restaurant not found");
+
             restaurant.Name = dto.Name;
             restaurant.Description = dto.Description;
             restaurant.HasDelivery = dto.HasDelivery;
             _dbContext.SaveChanges();
-            return true;
         }
 
     }

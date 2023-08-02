@@ -76,3 +76,7 @@ C:\Users\macie\source\repos\WebAPI\WebAPI\obj\Debug\net7.0\refint\WebAPI.dll
 C:\Users\macie\source\repos\WebAPI\WebAPI\obj\Debug\net7.0\WebAPI.pdb
 C:\Users\macie\source\repos\WebAPI\WebAPI\obj\Debug\net7.0\WebAPI.genruntimeconfig.cache
 C:\Users\macie\source\repos\WebAPI\WebAPI\obj\Debug\net7.0\ref\WebAPI.dll
+C:\Users\macie\source\repos\WebAPI\WebAPI\bin\Debug\net7.0\nlog.config
+C:\Users\macie\source\repos\WebAPI\WebAPI\bin\Debug\net7.0\NLog.dll
+C:\Users\macie\source\repos\WebAPI\WebAPI\bin\Debug\net7.0\NLog.Extensions.Logging.dll
+C:\Users\macie\source\repos\WebAPI\WebAPI\bin\Debug\net7.0\NLog.Web.AspNetCore.dll

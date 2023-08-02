@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "gO8lpBBUM2ZmtVI+zETf62YpzBuSSHZj4bQYO/zVH9WkgCgFdK/zyOSXRVdi+U2cNBjgFlp+rBdqZ/R4T83N8g==",
+  "dgSpecHash": "Cp79SsNR5+Tyv2gn4TOVlFEbEAhyl654TXljPczxgt9k1vmUvMy2Z6MCdH/0zvF1MqQVXK490+U8bPdsKoxs8A==",
   "success": true,
   "projectFilePath": "C:\\Users\\macie\\source\\repos\\WebAPI\\WebAPI\\WebAPI.csproj",
   "expectedPackageFiles": [
@@ -47,6 +47,9 @@
     "C:\\Users\\macie\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\macie\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
     "C:\\Users\\macie\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\macie\\.nuget\\packages\\nlog\\5.2.2\\nlog.5.2.2.nupkg.sha512",
+    "C:\\Users\\macie\\.nuget\\packages\\nlog.extensions.logging\\5.3.2\\nlog.extensions.logging.5.3.2.nupkg.sha512",
+    "C:\\Users\\macie\\.nuget\\packages\\nlog.web.aspnetcore\\5.3.2\\nlog.web.aspnetcore.5.3.2.nupkg.sha512",
     "C:\\Users\\macie\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
     "C:\\Users\\macie\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "C:\\Users\\macie\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",

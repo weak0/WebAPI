@@ -10,7 +10,7 @@
 
         public virtual Restaurant Restaurant { get; set; }
 
-     
+
 
     }
 }

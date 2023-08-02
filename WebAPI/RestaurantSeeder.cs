@@ -9,11 +9,18 @@ namespace WebAPI
         {
             _dbContext = dbContext;
         }
-        public  void Seed()
+        public void Seed()
         {
             if (_dbContext.Database.CanConnect())
             {
-                if(!_dbContext.Restaurants.Any())
+                if (!_dbContext.Roles.Any())
+                {
+                    var roles = GetRoles();
+                    _dbContext.Roles.AddRange(roles);
+                    _dbContext.SaveChanges();
+
+                }
+                if (!_dbContext.Restaurants.Any())
                 {
                     var restaurants = GetRestaurants();
                     _dbContext.Restaurants.AddRange(restaurants);
@@ -22,7 +29,30 @@ namespace WebAPI
             }
         }
 
-        public IEnumerable<Restaurant > GetRestaurants()
+        public IEnumerable<Role> GetRoles()
+        {
+            var roles = new List<Role>()
+            {      
+                new Role() 
+                {
+                    Name = "admin"
+                },
+                new Role()
+                {
+                    Name = "manager"
+                },
+                new Role()
+                {
+                    Name = "user"
+                }
+
+            };
+            return roles;
+
+
+
+        }
+        public IEnumerable<Restaurant> GetRestaurants()
         {
             var result = new List<Restaurant>();
             Restaurant r1 = new Restaurant()

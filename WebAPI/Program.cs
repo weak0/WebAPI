@@ -1,37 +1,60 @@
-using AutoMapper;
+using NLog;
+using NLog.Web;
 using WebAPI;
-using WebAPI.Controllers;
 using WebAPI.Entities;
+using WebAPI.Middleware.cs;
 using WebAPI.Serivces;
 
-var builder = WebApplication.CreateBuilder(args);
+var logger = NLog.LogManager.Setup().LoadConfigurationFromAppSettings().GetCurrentClassLogger();
+logger.Debug("init main");
 
-// Add services to the container.
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-builder.Services.AddDbContext<RestaurantDbContext>();
-builder.Services.AddScoped<RestaurantSeeder>();
-builder.Services.AddAutoMapper(typeof(Program));
-builder.Services.AddScoped<IRestauranServices, RestauranServices>();
-
-var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+try
 {
-    using (var scope = app.Services.CreateScope())
+    var builder = WebApplication.CreateBuilder(args);
+    // Add services to the container.
+    builder.Services.AddControllers();
+    builder.Logging.ClearProviders();
+    builder.Host.UseNLog();
+    builder.Services.AddEndpointsApiExplorer();
+    builder.Services.AddSwaggerGen();
+    builder.Services.AddDbContext<RestaurantDbContext>();
+    builder.Services.AddScoped<RestaurantSeeder>();
+    builder.Services.AddAutoMapper(typeof(Program));
+    builder.Services.AddScoped<IRestauranServices, RestauranServices>();
+    builder.Services.AddScoped<ErrorHandlingMiddlewarecs>();
+    builder.Services.AddScoped<RequestTimeMiddleware>();
+    var app = builder.Build();
+    // Configure the HTTP request pipeline.
+    if (app.Environment.IsDevelopment())
     {
-        var serviceProvider = scope.ServiceProvider;
-        var restaurantSeeder = serviceProvider.GetRequiredService<RestaurantSeeder>();
-        restaurantSeeder.Seed();
+        using (var scope = app.Services.CreateScope())
+        {
+            var serviceProvider = scope.ServiceProvider;
+            var restaurantSeeder = serviceProvider.GetRequiredService<RestaurantSeeder>();
+            restaurantSeeder.Seed();
+        }
+
+        app.UseMiddleware<ErrorHandlingMiddlewarecs>();
+        app.UseMiddleware<RequestTimeMiddleware>();
+        app.UseSwagger();
+        app.UseSwaggerUI();
     }
 
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseHttpsRedirection();
+    app.MapControllers();
+    app.Run();
+
+}
+catch (Exception exepction)
+{
+    logger.Error(exepction, "Stopped program becouse of exception");
+    throw;
+}
+finally
+{
+    NLog.LogManager.Shutdown();
 }
 
-app.UseHttpsRedirection();
-app.MapControllers();
-app.Run();
+
+
+
