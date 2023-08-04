@@ -19,6 +19,11 @@ namespace WebAPI
                 .ForMember(m => m.Addres, c => c.MapFrom(dto => new Addres()
                 { City = dto.City, PostalCode = dto.PostalCode, Street = dto.Street }));
 
+            CreateMap<AccountDto, User>()
+            .ForMember(u => u.Email, u => u.MapFrom(a => a.Email))
+            .ForMember(u => u.Name , u => u.MapFrom(a => a.Name))
+            .ForMember(u => u.Password, u => u.MapFrom(a => a.Password));
+
         }
     }
 }

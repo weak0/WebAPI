@@ -1,0 +1,123 @@
+2023-07-28 11:27:55.9208|0|ERROR|WebAPI.Serivces.RestauranServices|Restaruant with id: 115 Delete action invoked System.Exception: error
+2023-07-28 11:28:07.7081|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|Source was not found WebAPI.Exepction.NotFoundExeption: restaurant not found
+   at WebAPI.Serivces.RestauranServices.Delete(Int32 id) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\RestauranServices.cs:line 59
+   at WebAPI.Controllers.RestaurantController.Delete(Int32 id) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\RestaurantController.cs:line 45
+   at lambda_method10(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-07-28 11:28:45.0599|0|ERROR|WebAPI.Serivces.RestauranServices|Restaruant with id: 115 Delete action invoked System.Exception: error
+2023-07-28 11:29:12.6215|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|Source was not found WebAPI.Exepction.NotFoundExeption: restaurant not found
+   at WebAPI.Serivces.RestauranServices.Delete(Int32 id)
+   at WebAPI.Controllers.RestaurantController.Delete(Int32 id)
+   at lambda_method10(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next)
+2023-07-28 11:29:48.4949|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|Source was not found WebAPI.Exepction.NotFoundExeption: restaurant not found
+   at WebAPI.Serivces.RestauranServices.Delete(Int32 id) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\RestauranServices.cs:line 59
+   at WebAPI.Controllers.RestaurantController.Delete(Int32 id) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\RestaurantController.cs:line 45
+   at lambda_method10(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-07-28 11:29:49.6691|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|Source was not found WebAPI.Exepction.NotFoundExeption: restaurant not found
+   at WebAPI.Serivces.RestauranServices.Delete(Int32 id) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\RestauranServices.cs:line 59
+   at WebAPI.Controllers.RestaurantController.Delete(Int32 id) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\RestaurantController.cs:line 45
+   at lambda_method10(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-07-28 12:05:00.0730|0|ERROR|Program|Stopped program becouse of exception System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: WebAPI.Middleware.cs.RequestTimeMiddleware Lifetime: Scoped ImplementationType: WebAPI.Middleware.cs.RequestTimeMiddleware': Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'WebAPI.Middleware.cs.RequestTimeMiddleware'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'WebAPI.Middleware.cs.RequestTimeMiddleware'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+2023-07-28 12:05:05.6576|0|ERROR|Program|Stopped program becouse of exception System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: WebAPI.Middleware.cs.RequestTimeMiddleware Lifetime: Scoped ImplementationType: WebAPI.Middleware.cs.RequestTimeMiddleware': Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'WebAPI.Middleware.cs.RequestTimeMiddleware'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'WebAPI.Middleware.cs.RequestTimeMiddleware'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+2023-07-28 12:05:14.9885|0|ERROR|Program|Stopped program becouse of exception System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: WebAPI.Middleware.cs.RequestTimeMiddleware Lifetime: Scoped ImplementationType: WebAPI.Middleware.cs.RequestTimeMiddleware': Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'WebAPI.Middleware.cs.RequestTimeMiddleware'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'WebAPI.Middleware.cs.RequestTimeMiddleware'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+2023-07-28 12:06:13.0762|0|ERROR|Program|Stopped program becouse of exception System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: WebAPI.Middleware.cs.RequestTimeMiddleware Lifetime: Scoped ImplementationType: WebAPI.Middleware.cs.RequestTimeMiddleware': Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'WebAPI.Middleware.cs.RequestTimeMiddleware'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'WebAPI.Middleware.cs.RequestTimeMiddleware'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+2023-07-28 12:14:25.0169|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 0s  
+2023-07-28 12:14:25.3054|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 0s  
+2023-07-28 12:14:30.2916|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-07-28 12:14:30.3700|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 0s  
+2023-07-28 12:14:37.0941|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 0s  
+2023-07-28 12:15:25.4115|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 86ms  
+2023-07-28 12:15:25.7154|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 47ms  
+2023-07-28 12:15:27.9817|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-07-28 12:15:28.1982|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 218ms  

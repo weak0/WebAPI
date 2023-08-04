@@ -1,0 +1,176 @@
+2023-08-02 09:51:09.0326|0|ERROR|Program|Stopped program becouse of exception Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\macie\source\repos\WebAPI\WebAPI\Program.cs:line 26
+2023-08-02 09:53:14.3934|0|ERROR|Program|Stopped program becouse of exception Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\macie\source\repos\WebAPI\WebAPI\Program.cs:line 26
+2023-08-02 09:56:41.8163|0|ERROR|Program|Stopped program becouse of exception Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\macie\source\repos\WebAPI\WebAPI\Program.cs:line 26
+2023-08-02 09:56:52.0639|0|ERROR|Program|Stopped program becouse of exception Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\macie\source\repos\WebAPI\WebAPI\Program.cs:line 26
+2023-08-02 10:05:02.8910|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 8ms  
+2023-08-02 10:05:03.0623|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 157ms  
+2023-08-02 10:05:03.0623|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 11ms  
+2023-08-02 10:05:03.1724|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 18ms  
+2023-08-02 10:05:03.1724|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 28ms  
+2023-08-02 10:05:03.2607|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 0ms  
+2023-08-02 10:05:03.3802|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 62ms  
+2023-08-02 10:05:48.8577|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 116ms  
+2023-08-02 10:05:49.1667|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 56ms  
+2023-08-02 10:06:37.7896|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 113ms  
+2023-08-02 10:06:38.0262|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 57ms  
+2023-08-02 10:07:03.5587|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 103ms  
+2023-08-02 10:07:03.7920|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 54ms  
+2023-08-02 10:09:52.3267|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 115ms  
+2023-08-02 10:09:52.5714|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 61ms  
+2023-08-02 13:23:51.1219|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 120ms  
+2023-08-02 13:23:51.3822|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 66ms  
+2023-08-02 13:24:24.3810|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-08-02 13:24:45.4530|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|Missing type map configuration or unsupported mapping.
+
+Mapping types:
+AccountDto -> User
+WebAPI.Models.AccountDto -> WebAPI.Entities.User AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+AccountDto -> User
+WebAPI.Models.AccountDto -> WebAPI.Entities.User
+   at lambda_method18(Closure, Object, User, ResolutionContext)
+   at WebAPI.Serivces.AccountServices.CreateUser(AccountDto account) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\AccountServices.cs:line 20
+   at WebAPI.Controllers.AccountContorler.Register(AccountDto dto) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\AccountContorler.cs:line 22
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\RequestTimeMiddleware.cs:line 17
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-08-02 13:30:41.4100|0|ERROR|Program|Stopped program becouse of exception Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\macie\source\repos\WebAPI\WebAPI\Program.cs:line 27
+2023-08-02 13:31:22.7671|0|ERROR|Program|Stopped program becouse of exception Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\macie\source\repos\WebAPI\WebAPI\Program.cs:line 27
+2023-08-02 13:31:37.1186|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 123ms  
+2023-08-02 13:31:37.3727|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 63ms  
+2023-08-02 13:31:56.5003|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-08-02 13:32:23.4276|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|An error occurred while saving the entity changes. See the inner exception for details. Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Users_Roles_RoleId". The conflict occurred in database "RestaurantDb", table "dbo.Roles", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+ClientConnectionId:f59ad5d8-1c90-456a-a092-3a334e42680f
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__107_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at WebAPI.Serivces.AccountServices.CreateUser(AccountDto account) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\AccountServices.cs:line 22
+   at WebAPI.Controllers.AccountContorler.Register(AccountDto dto) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\AccountContorler.cs:line 22
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\RequestTimeMiddleware.cs:line 17
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-08-02 13:34:33.5160|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 116ms  
+2023-08-02 13:34:33.7487|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 58ms  
+2023-08-02 13:34:38.8601|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-08-02 13:37:20.9841|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 124ms  
+2023-08-02 13:37:21.2769|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 68ms  
+2023-08-02 13:37:25.4698|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-08-02 13:40:03.9628|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 116ms  
+2023-08-02 13:40:04.2142|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 57ms  
+2023-08-02 13:40:10.8751|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-08-02 13:40:11.0943|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 220ms  
+2023-08-02 13:40:13.7721|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 38ms  
+2023-08-02 13:41:20.7512|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 111ms  
+2023-08-02 13:41:20.9856|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 57ms  
+2023-08-02 13:41:31.1575|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-08-02 13:41:31.2653|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 110ms  
+2023-08-02 13:46:47.9540|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 108ms  
+2023-08-02 13:46:48.1838|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 56ms  
+2023-08-02 13:46:59.2557|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-08-02 13:46:59.3445|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 90ms  
+2023-08-02 14:36:15.2589|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 145ms  
+2023-08-02 14:36:15.5169|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 66ms  
+2023-08-02 14:36:26.2501|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-08-02 14:36:26.4736|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 227ms  
+2023-08-02 14:36:48.8955|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 110ms  
+2023-08-02 14:36:49.1368|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 60ms  
+2023-08-02 14:37:00.9443|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 117ms  
+2023-08-02 14:37:01.1852|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 57ms  
+2023-08-02 14:37:09.3768|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-08-02 14:37:09.5946|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 214ms  
+2023-08-02 14:37:10.7119|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 35ms  

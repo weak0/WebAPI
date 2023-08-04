@@ -1,0 +1,1242 @@
+2023-08-03 09:57:19.2532|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 181ms  
+2023-08-03 09:57:19.5531|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 64ms  
+2023-08-03 09:57:43.8985|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-08-03 09:58:11.8403|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 108ms  
+2023-08-03 09:58:12.0792|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 54ms  
+2023-08-03 09:58:20.6648|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-08-03 09:58:20.9270|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 260ms  
+2023-08-03 10:21:06.6412|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 110ms  
+2023-08-03 10:21:06.8937|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 61ms  
+2023-08-03 10:21:15.4752|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-08-03 10:21:24.1575|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|Użytkownik o podanym adresie email juz istnieje System.Exception: Użytkownik o podanym adresie email juz istnieje
+   at WebAPI.Serivces.AccountServices.CreateUser(AccountDto account) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\AccountServices.cs:line 24
+   at WebAPI.Controllers.AccountContorler.Register(AccountDto dto) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\AccountContorler.cs:line 22
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\RequestTimeMiddleware.cs:line 17
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-08-03 10:35:49.3139|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 119ms  
+2023-08-03 10:35:49.6064|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 69ms  
+2023-08-03 10:35:56.2404|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-08-03 10:36:12.5110|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|Użytkownik o podanym adresie email juz istnieje System.Exception: Użytkownik o podanym adresie email juz istnieje
+   at WebAPI.Serivces.AccountServices.CreateUser(AccountDto account) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\AccountServices.cs:line 24
+   at WebAPI.Controllers.AccountContorler.Register(AccountDto dto) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\AccountContorler.cs:line 22
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\RequestTimeMiddleware.cs:line 17
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-08-03 10:36:17.9444|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 84ms  
+2023-08-03 10:36:18.1648|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 47ms  
+2023-08-03 10:36:24.6959|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-08-03 10:36:24.8097|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|Użytkownik o podanym adresie email juz istnieje System.Exception: Użytkownik o podanym adresie email juz istnieje
+   at WebAPI.Serivces.AccountServices.CreateUser(AccountDto account) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\AccountServices.cs:line 24
+   at WebAPI.Controllers.AccountContorler.Register(AccountDto dto) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\AccountContorler.cs:line 22
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\RequestTimeMiddleware.cs:line 17
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-08-03 10:36:31.0717|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|Użytkownik o podanym adresie email juz istnieje System.Exception: Użytkownik o podanym adresie email juz istnieje
+   at WebAPI.Serivces.AccountServices.CreateUser(AccountDto account) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\AccountServices.cs:line 24
+   at WebAPI.Controllers.AccountContorler.Register(AccountDto dto) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\AccountContorler.cs:line 22
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\RequestTimeMiddleware.cs:line 17
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-08-03 10:36:37.3393|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 2ms  
+2023-08-03 10:36:37.4323|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 2ms  
+2023-08-03 10:36:55.3340|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 9ms  
+2023-08-03 10:37:05.8197|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|Użytkownik o podanym adresie email juz istnieje System.Exception: Użytkownik o podanym adresie email juz istnieje
+   at WebAPI.Serivces.AccountServices.CreateUser(AccountDto account) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\AccountServices.cs:line 24
+   at WebAPI.Controllers.AccountContorler.Register(AccountDto dto) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\AccountContorler.cs:line 22
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\RequestTimeMiddleware.cs:line 17
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-08-03 10:37:17.0132|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|Użytkownik o podanym adresie email juz istnieje System.Exception: Użytkownik o podanym adresie email juz istnieje
+   at WebAPI.Serivces.AccountServices.CreateUser(AccountDto account) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\AccountServices.cs:line 24
+   at WebAPI.Controllers.AccountContorler.Register(AccountDto dto) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\AccountContorler.cs:line 22
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\RequestTimeMiddleware.cs:line 17
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-08-03 10:37:44.7638|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|Użytkownik o podanym adresie email juz istnieje System.Exception: Użytkownik o podanym adresie email juz istnieje
+   at WebAPI.Serivces.AccountServices.CreateUser(AccountDto account) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\AccountServices.cs:line 24
+   at WebAPI.Controllers.AccountContorler.Register(AccountDto dto) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\AccountContorler.cs:line 22
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\RequestTimeMiddleware.cs:line 17
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-08-03 10:37:46.8829|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|Użytkownik o podanym adresie email juz istnieje System.Exception: Użytkownik o podanym adresie email juz istnieje
+   at WebAPI.Serivces.AccountServices.CreateUser(AccountDto account) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\AccountServices.cs:line 24
+   at WebAPI.Controllers.AccountContorler.Register(AccountDto dto) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\AccountContorler.cs:line 22
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\RequestTimeMiddleware.cs:line 17
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-08-03 10:37:47.4961|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|Użytkownik o podanym adresie email juz istnieje System.Exception: Użytkownik o podanym adresie email juz istnieje
+   at WebAPI.Serivces.AccountServices.CreateUser(AccountDto account) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\AccountServices.cs:line 24
+   at WebAPI.Controllers.AccountContorler.Register(AccountDto dto) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\AccountContorler.cs:line 22
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\RequestTimeMiddleware.cs:line 17
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-08-03 10:37:49.5924|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 1ms  
+2023-08-03 10:37:49.7514|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 1ms  
+2023-08-03 10:37:57.6817|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 116ms  
+2023-08-03 10:37:57.9566|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 59ms  
+2023-08-03 10:38:08.7575|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-08-03 10:38:30.6912|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|Użytkownik o podanym adresie email juz istnieje System.Exception: Użytkownik o podanym adresie email juz istnieje
+   at WebAPI.Serivces.AccountServices.CreateUser(AccountDto account) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\AccountServices.cs:line 24
+   at WebAPI.Controllers.AccountContorler.Register(AccountDto dto) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\AccountContorler.cs:line 22
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\RequestTimeMiddleware.cs:line 17
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-08-03 10:39:55.9867|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 112ms  
+2023-08-03 10:39:56.2248|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 57ms  
+2023-08-03 10:40:03.1041|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-08-03 10:40:13.4939|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|Source was not found WebAPI.Exepction.NotFoundExeption: restaurant not found
+   at WebAPI.Serivces.RestauranServices.Delete(Int32 id) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\RestauranServices.cs:line 59
+   at WebAPI.Controllers.RestaurantController.Delete(Int32 id) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\RestaurantController.cs:line 41
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\RequestTimeMiddleware.cs:line 17
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-08-03 10:41:27.1139|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 108ms  
+2023-08-03 10:41:27.3409|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 52ms  
+2023-08-03 10:41:29.4128|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 6ms  
+2023-08-03 10:41:29.6165|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 3ms  
+2023-08-03 10:41:34.8391|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-08-03 10:41:34.9309|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 95ms  
+2023-08-03 10:41:47.0523|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|Użytkownik o podanym adresie email juz istnieje System.Exception: Użytkownik o podanym adresie email juz istnieje
+   at WebAPI.Serivces.AccountServices.CreateUser(AccountDto account) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\AccountServices.cs:line 24
+   at WebAPI.Controllers.AccountContorler.Register(AccountDto dto) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\AccountContorler.cs:line 22
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\RequestTimeMiddleware.cs:line 17
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-08-03 10:49:53.1943|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 111ms  
+2023-08-03 10:49:53.4422|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 74ms  
+2023-08-03 11:43:34.3440|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 119ms  
+2023-08-03 11:43:34.5922|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 62ms  
+2023-08-03 11:43:52.3675|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-08-03 11:43:52.4591|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 90ms  
+2023-08-03 11:43:53.3334|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 3ms  
+2023-08-03 11:43:55.7508|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 3ms  
+2023-08-03 11:43:56.2665|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 1ms  
+2023-08-03 11:43:58.7580|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 1ms  
+2023-08-03 11:44:27.8975|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 139ms  
+2023-08-03 11:44:28.1625|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 54ms  
+2023-08-03 11:44:34.8497|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-08-03 11:44:35.1236|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 276ms  
+2023-08-03 11:46:49.8944|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 116ms  
+2023-08-03 11:46:50.1379|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 61ms  
+2023-08-03 11:47:17.9146|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 18ms  
+2023-08-03 11:47:18.1162|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 2ms  
+2023-08-03 11:47:32.2899|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-08-03 11:48:21.4633|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 113ms  
+2023-08-03 11:48:21.7173|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 65ms  
+2023-08-03 11:48:33.8505|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-08-03 11:48:34.1093|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 261ms  
+2023-08-03 11:53:18.6260|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 110ms  
+2023-08-03 11:53:18.8653|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 54ms  
+2023-08-03 11:53:24.8809|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-08-03 11:53:25.1460|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 266ms  
+2023-08-03 11:54:17.4234|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 107ms  
+2023-08-03 11:54:17.6557|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 54ms  
+2023-08-03 11:54:31.5228|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-08-03 11:54:31.7892|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 268ms  
+2023-08-03 15:36:28.0724|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 121ms  
+2023-08-03 15:36:28.3130|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 56ms  
+2023-08-03 15:36:32.7316|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-08-03 15:36:33.0059|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 273ms  
+2023-08-03 15:38:00.7460|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 95ms  
+2023-08-03 15:38:48.3117|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 111ms  
+2023-08-03 15:38:48.5472|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 56ms  
+2023-08-03 15:38:57.6775|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-08-03 15:38:57.9337|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 258ms  
+2023-08-03 15:50:40.0244|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 124ms  
+2023-08-03 15:50:40.3141|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 62ms  
+2023-08-03 15:50:46.0061|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-08-03 15:50:46.0859|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 89ms  
+2023-08-03 15:51:13.1480|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 5ms  
+2023-08-03 15:51:20.2311|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 2ms  
+2023-08-03 15:51:26.4181|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 0ms  
+2023-08-03 15:51:32.3863|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 0ms  
+2023-08-03 15:59:18.7995|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 118ms  
+2023-08-03 15:59:19.0403|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 56ms  
+2023-08-03 15:59:24.6326|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-08-03 15:59:24.8898|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 263ms  
+2023-08-03 16:37:49.9840|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 117ms  
+2023-08-03 16:37:50.3008|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 75ms  
+2023-08-03 16:38:01.9620|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-08-03 16:38:02.2447|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 281ms  
+2023-08-03 16:39:28.3190|0|ERROR|Program|Stopped program becouse of exception Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\macie\source\repos\WebAPI\WebAPI\Program.cs:line 33
+2023-08-03 16:39:43.9758|0|ERROR|Program|Stopped program becouse of exception Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\macie\source\repos\WebAPI\WebAPI\Program.cs:line 33
+2023-08-03 16:39:51.4613|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 128ms  
+2023-08-03 16:39:51.7514|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 66ms  
+2023-08-03 16:39:59.3070|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-08-03 16:39:59.6210|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 313ms  
+2023-08-03 16:40:58.5864|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 117ms  
+2023-08-03 16:40:58.8484|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 64ms  
+2023-08-03 16:41:02.2560|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 9ms  
+2023-08-03 16:41:02.3669|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 2ms  
+2023-08-03 16:41:08.5687|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-08-03 16:41:08.8510|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 287ms  
+2023-08-03 16:51:52.3919|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 123ms  
+2023-08-03 16:51:52.6673|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 66ms  
+2023-08-03 16:51:58.2291|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-08-03 16:51:58.5531|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 321ms  
+2023-08-03 16:53:14.0086|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 122ms  
+2023-08-03 16:53:14.2645|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 58ms  
+2023-08-03 16:53:18.8186|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-08-03 16:53:19.1617|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 344ms  
+2023-08-03 16:56:13.9363|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 139ms  
+2023-08-03 16:56:14.1889|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 59ms  
+2023-08-03 16:56:20.0530|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-08-03 16:57:06.5176|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|fjkdfjsldf System.Exception: fjkdfjsldf
+   at WebAPI.Models.Validations.AccountDtoValidation.<>c__DisplayClass0_0.<.ctor>b__6(String value, ValidationContext`1 context) in C:\Users\macie\source\repos\WebAPI\WebAPI\Models\Validations\AccountDtoValidation.cs:line 21
+   at FluentValidation.DefaultValidatorExtensions.<>c__DisplayClass69_0`2.<Custom>b__0(T parent, TProperty value, ValidationContext`1 context) in /_/src/FluentValidation/DefaultValidatorExtensions.cs:line 1134
+   at FluentValidation.DefaultValidatorExtensions.<>c__DisplayClass29_0`2.<Must>b__0(T instance, TProperty property, ValidationContext`1 propertyValidatorContext) in /_/src/FluentValidation/DefaultValidatorExtensions.cs:line 453
+   at FluentValidation.Validators.PredicateValidator`2.IsValid(ValidationContext`1 context, TProperty value) in /_/src/FluentValidation/Validators/PredicateValidator.cs:line 37
+   at FluentValidation.Internal.RuleComponent`2.InvokePropertyValidator(ValidationContext`1 context, TProperty value) in /_/src/FluentValidation/Internal/RuleComponent.cs:line 92
+   at FluentValidation.Internal.RuleComponent`2.ValidateAsync(ValidationContext`1 context, TProperty value, Boolean useAsync, CancellationToken cancellation) in /_/src/FluentValidation/Internal/RuleComponent.cs:line 83
+   at FluentValidation.Internal.PropertyRule`2.ValidateAsync(ValidationContext`1 context, Boolean useAsync, CancellationToken cancellation) in /_/src/FluentValidation/Internal/PropertyRule.cs:line 143
+   at FluentValidation.AbstractValidator`1.ValidateInternalAsync(ValidationContext`1 context, Boolean useAsync, CancellationToken cancellation) in /_/src/FluentValidation/AbstractValidator.cs:line 241
+   at FluentValidation.AbstractValidator`1.Validate(ValidationContext`1 context) in /_/src/FluentValidation/AbstractValidator.cs:line 202
+   at FluentValidation.AbstractValidator`1.Validate(T instance) in /_/src/FluentValidation/AbstractValidator.cs:line 167
+   at WebAPI.Serivces.AccountServices.CreateUser(AccountDto account) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\AccountServices.cs:line 27
+   at WebAPI.Controllers.AccountContorler.Register(AccountDto dto) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\AccountContorler.cs:line 22
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\RequestTimeMiddleware.cs:line 17
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-08-03 17:04:43.6283|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 115ms  
+2023-08-03 17:04:43.8665|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 56ms  
+2023-08-03 17:04:50.8667|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-08-03 17:05:01.6223|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|System.Collections.Generic.List`1[FluentValidation.Results.ValidationFailure] System.Exception: System.Collections.Generic.List`1[FluentValidation.Results.ValidationFailure]
+   at WebAPI.Serivces.AccountServices.CreateUser(AccountDto account) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\AccountServices.cs:line 30
+   at WebAPI.Controllers.AccountContorler.Register(AccountDto dto) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\AccountContorler.cs:line 22
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\RequestTimeMiddleware.cs:line 17
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-08-03 17:06:11.5747|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 92ms  
+2023-08-03 17:06:11.8092|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 50ms  
+2023-08-03 17:06:15.5842|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-08-03 17:06:15.7273|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|System.Collections.Generic.List`1[FluentValidation.Results.ValidationFailure] System.Exception: System.Collections.Generic.List`1[FluentValidation.Results.ValidationFailure]
+   at WebAPI.Serivces.AccountServices.CreateUser(AccountDto account) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\AccountServices.cs:line 30
+   at WebAPI.Controllers.AccountContorler.Register(AccountDto dto) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\AccountContorler.cs:line 22
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\RequestTimeMiddleware.cs:line 17
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-08-03 17:08:38.2207|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 119ms  
+2023-08-03 17:08:38.4644|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 57ms  
+2023-08-03 17:08:49.4124|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-08-03 17:09:00.0344|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|System.Collections.Generic.List`1[FluentValidation.Results.ValidationFailure] System.Exception: System.Collections.Generic.List`1[FluentValidation.Results.ValidationFailure]
+   at WebAPI.Serivces.AccountServices.CreateUser(AccountDto account) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\AccountServices.cs:line 30
+   at WebAPI.Controllers.AccountContorler.Register(AccountDto dto) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\AccountContorler.cs:line 22
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\RequestTimeMiddleware.cs:line 17
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-08-03 17:09:37.6879|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 116ms  
+2023-08-03 17:09:37.9345|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 60ms  
+2023-08-03 17:09:48.2149|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-08-03 17:09:48.5219|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 313ms  
+2023-08-03 17:10:09.5443|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|System.Collections.Generic.List`1[FluentValidation.Results.ValidationFailure] System.Exception: System.Collections.Generic.List`1[FluentValidation.Results.ValidationFailure]
+   at WebAPI.Serivces.AccountServices.CreateUser(AccountDto account) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\AccountServices.cs:line 30
+   at WebAPI.Controllers.AccountContorler.Register(AccountDto dto) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\AccountContorler.cs:line 22
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\RequestTimeMiddleware.cs:line 17
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-08-03 17:19:12.2199|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 89ms  
+2023-08-03 17:19:12.4625|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 51ms  
+2023-08-03 17:19:17.0999|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-08-03 17:19:17.2306|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|System.Collections.Generic.List`1[FluentValidation.Results.ValidationFailure] System.Exception: System.Collections.Generic.List`1[FluentValidation.Results.ValidationFailure]
+   at WebAPI.Serivces.AccountServices.CreateUser(AccountDto account) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\AccountServices.cs:line 30
+   at WebAPI.Controllers.AccountContorler.Register(AccountDto dto) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\AccountContorler.cs:line 22
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\RequestTimeMiddleware.cs:line 17
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-08-03 17:20:32.1178|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 126ms  
+2023-08-03 17:20:32.3836|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 69ms  
+2023-08-03 17:20:37.0695|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-08-03 17:20:39.8285|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|System.Collections.Generic.List`1[FluentValidation.Results.ValidationFailure] System.Exception: System.Collections.Generic.List`1[FluentValidation.Results.ValidationFailure]
+   at WebAPI.Serivces.AccountServices.CreateUser(AccountDto account) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\AccountServices.cs:line 30
+   at WebAPI.Controllers.AccountContorler.Register(AccountDto dto) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\AccountContorler.cs:line 22
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\RequestTimeMiddleware.cs:line 17
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-08-03 17:32:33.4460|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 84ms  
+2023-08-03 17:32:33.6936|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 47ms  
+2023-08-03 17:32:38.7716|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-08-03 17:32:38.9096|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|Validate errors: That emiail is taken System.ArgumentException: Validate errors: That emiail is taken
+   at WebAPI.Serivces.AccountServices.CreateUser(AccountDto account) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\AccountServices.cs:line 30
+   at WebAPI.Controllers.AccountContorler.Register(AccountDto dto) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\AccountContorler.cs:line 22
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\RequestTimeMiddleware.cs:line 17
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-08-03 17:33:12.3953|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 128ms  
+2023-08-03 17:33:12.4269|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 11ms  
+2023-08-03 17:33:12.6119|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 70ms  
+2023-08-03 17:33:12.6483|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 2ms  
+2023-08-03 17:33:18.5861|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-08-03 17:33:24.2890|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|Validate errors: That emiail is taken System.ArgumentException: Validate errors: That emiail is taken
+   at WebAPI.Serivces.AccountServices.CreateUser(AccountDto account) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\AccountServices.cs:line 30
+   at WebAPI.Controllers.AccountContorler.Register(AccountDto dto) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\AccountContorler.cs:line 22
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\RequestTimeMiddleware.cs:line 17
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-08-03 17:34:58.2366|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 86ms  
+2023-08-03 17:34:58.4674|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 48ms  
+2023-08-03 17:35:02.4932|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-08-03 17:35:02.6349|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|Validate errors: That emiail is taken System.ArgumentException: Validate errors: That emiail is taken
+   at WebAPI.Serivces.AccountServices.CreateUser(AccountDto account) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\AccountServices.cs:line 30
+   at WebAPI.Controllers.AccountContorler.Register(AccountDto dto) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\AccountContorler.cs:line 22
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\RequestTimeMiddleware.cs:line 17
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-08-03 17:35:16.8363|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 84ms  
+2023-08-03 17:35:16.9866|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 52ms  
+2023-08-03 17:35:21.6928|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-08-03 17:35:21.8256|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|Validate errors: That emiail is taken System.ArgumentException: Validate errors: That emiail is taken
+   at WebAPI.Serivces.AccountServices.CreateUser(AccountDto account) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\AccountServices.cs:line 30
+   at WebAPI.Controllers.AccountContorler.Register(AccountDto dto) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\AccountContorler.cs:line 22
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\RequestTimeMiddleware.cs:line 17
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-08-03 17:35:23.9203|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|Validate errors: That emiail is taken System.ArgumentException: Validate errors: That emiail is taken
+   at WebAPI.Serivces.AccountServices.CreateUser(AccountDto account) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\AccountServices.cs:line 30
+   at WebAPI.Controllers.AccountContorler.Register(AccountDto dto) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\AccountContorler.cs:line 22
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\RequestTimeMiddleware.cs:line 17
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-08-03 17:35:24.9339|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|Validate errors: That emiail is taken System.ArgumentException: Validate errors: That emiail is taken
+   at WebAPI.Serivces.AccountServices.CreateUser(AccountDto account) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\AccountServices.cs:line 30
+   at WebAPI.Controllers.AccountContorler.Register(AccountDto dto) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\AccountContorler.cs:line 22
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\RequestTimeMiddleware.cs:line 17
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-08-03 17:35:25.4707|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|Validate errors: That emiail is taken System.ArgumentException: Validate errors: That emiail is taken
+   at WebAPI.Serivces.AccountServices.CreateUser(AccountDto account) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\AccountServices.cs:line 30
+   at WebAPI.Controllers.AccountContorler.Register(AccountDto dto) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\AccountContorler.cs:line 22
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\RequestTimeMiddleware.cs:line 17
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-08-03 17:35:25.8831|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|Validate errors: That emiail is taken System.ArgumentException: Validate errors: That emiail is taken
+   at WebAPI.Serivces.AccountServices.CreateUser(AccountDto account) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\AccountServices.cs:line 30
+   at WebAPI.Controllers.AccountContorler.Register(AccountDto dto) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\AccountContorler.cs:line 22
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\RequestTimeMiddleware.cs:line 17
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-08-03 17:35:26.1368|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|Validate errors: That emiail is taken System.ArgumentException: Validate errors: That emiail is taken
+   at WebAPI.Serivces.AccountServices.CreateUser(AccountDto account) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\AccountServices.cs:line 30
+   at WebAPI.Controllers.AccountContorler.Register(AccountDto dto) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\AccountContorler.cs:line 22
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\RequestTimeMiddleware.cs:line 17
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-08-03 17:35:26.3350|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|Validate errors: That emiail is taken System.ArgumentException: Validate errors: That emiail is taken
+   at WebAPI.Serivces.AccountServices.CreateUser(AccountDto account) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\AccountServices.cs:line 30
+   at WebAPI.Controllers.AccountContorler.Register(AccountDto dto) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\AccountContorler.cs:line 22
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\RequestTimeMiddleware.cs:line 17
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-08-03 17:35:26.5016|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|Validate errors: That emiail is taken System.ArgumentException: Validate errors: That emiail is taken
+   at WebAPI.Serivces.AccountServices.CreateUser(AccountDto account) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\AccountServices.cs:line 30
+   at WebAPI.Controllers.AccountContorler.Register(AccountDto dto) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\AccountContorler.cs:line 22
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\RequestTimeMiddleware.cs:line 17
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-08-03 17:35:26.6776|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|Validate errors: That emiail is taken System.ArgumentException: Validate errors: That emiail is taken
+   at WebAPI.Serivces.AccountServices.CreateUser(AccountDto account) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\AccountServices.cs:line 30
+   at WebAPI.Controllers.AccountContorler.Register(AccountDto dto) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\AccountContorler.cs:line 22
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\RequestTimeMiddleware.cs:line 17
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-08-03 17:35:26.8698|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|Validate errors: That emiail is taken System.ArgumentException: Validate errors: That emiail is taken
+   at WebAPI.Serivces.AccountServices.CreateUser(AccountDto account) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\AccountServices.cs:line 30
+   at WebAPI.Controllers.AccountContorler.Register(AccountDto dto) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\AccountContorler.cs:line 22
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\RequestTimeMiddleware.cs:line 17
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-08-03 17:35:27.0684|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|Validate errors: That emiail is taken System.ArgumentException: Validate errors: That emiail is taken
+   at WebAPI.Serivces.AccountServices.CreateUser(AccountDto account) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\AccountServices.cs:line 30
+   at WebAPI.Controllers.AccountContorler.Register(AccountDto dto) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\AccountContorler.cs:line 22
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\RequestTimeMiddleware.cs:line 17
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-08-03 17:35:27.2554|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|Validate errors: That emiail is taken System.ArgumentException: Validate errors: That emiail is taken
+   at WebAPI.Serivces.AccountServices.CreateUser(AccountDto account) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\AccountServices.cs:line 30
+   at WebAPI.Controllers.AccountContorler.Register(AccountDto dto) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\AccountContorler.cs:line 22
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\RequestTimeMiddleware.cs:line 17
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-08-03 17:35:27.4438|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|Validate errors: That emiail is taken System.ArgumentException: Validate errors: That emiail is taken
+   at WebAPI.Serivces.AccountServices.CreateUser(AccountDto account) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\AccountServices.cs:line 30
+   at WebAPI.Controllers.AccountContorler.Register(AccountDto dto) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\AccountContorler.cs:line 22
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\RequestTimeMiddleware.cs:line 17
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-08-03 17:35:27.6622|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|Validate errors: That emiail is taken System.ArgumentException: Validate errors: That emiail is taken
+   at WebAPI.Serivces.AccountServices.CreateUser(AccountDto account) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\AccountServices.cs:line 30
+   at WebAPI.Controllers.AccountContorler.Register(AccountDto dto) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\AccountContorler.cs:line 22
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\RequestTimeMiddleware.cs:line 17
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-08-03 17:35:28.3288|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|Validate errors: That emiail is taken System.ArgumentException: Validate errors: That emiail is taken
+   at WebAPI.Serivces.AccountServices.CreateUser(AccountDto account) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\AccountServices.cs:line 30
+   at WebAPI.Controllers.AccountContorler.Register(AccountDto dto) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\AccountContorler.cs:line 22
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\RequestTimeMiddleware.cs:line 17
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-08-03 17:35:28.8297|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|Validate errors: That emiail is taken System.ArgumentException: Validate errors: That emiail is taken
+   at WebAPI.Serivces.AccountServices.CreateUser(AccountDto account) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\AccountServices.cs:line 30
+   at WebAPI.Controllers.AccountContorler.Register(AccountDto dto) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\AccountContorler.cs:line 22
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\RequestTimeMiddleware.cs:line 17
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-08-03 17:35:29.2259|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|Validate errors: That emiail is taken System.ArgumentException: Validate errors: That emiail is taken
+   at WebAPI.Serivces.AccountServices.CreateUser(AccountDto account) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\AccountServices.cs:line 30
+   at WebAPI.Controllers.AccountContorler.Register(AccountDto dto) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\AccountContorler.cs:line 22
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\RequestTimeMiddleware.cs:line 17
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-08-03 17:35:29.8661|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|Validate errors: That emiail is taken System.ArgumentException: Validate errors: That emiail is taken
+   at WebAPI.Serivces.AccountServices.CreateUser(AccountDto account) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\AccountServices.cs:line 30
+   at WebAPI.Controllers.AccountContorler.Register(AccountDto dto) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\AccountContorler.cs:line 22
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\RequestTimeMiddleware.cs:line 17
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-08-03 17:35:30.4304|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|Validate errors: That emiail is taken System.ArgumentException: Validate errors: That emiail is taken
+   at WebAPI.Serivces.AccountServices.CreateUser(AccountDto account) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\AccountServices.cs:line 30
+   at WebAPI.Controllers.AccountContorler.Register(AccountDto dto) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\AccountContorler.cs:line 22
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\RequestTimeMiddleware.cs:line 17
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-08-03 17:35:30.9507|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|Validate errors: That emiail is taken System.ArgumentException: Validate errors: That emiail is taken
+   at WebAPI.Serivces.AccountServices.CreateUser(AccountDto account) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\AccountServices.cs:line 30
+   at WebAPI.Controllers.AccountContorler.Register(AccountDto dto) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\AccountContorler.cs:line 22
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\RequestTimeMiddleware.cs:line 17
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-08-03 17:35:32.5888|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 2ms  
+2023-08-03 17:35:32.6854|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 2ms  
+2023-08-03 17:35:40.1942|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|Validate errors: That emiail is taken System.ArgumentException: Validate errors: That emiail is taken
+   at WebAPI.Serivces.AccountServices.CreateUser(AccountDto account) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\AccountServices.cs:line 30
+   at WebAPI.Controllers.AccountContorler.Register(AccountDto dto) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\AccountContorler.cs:line 22
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\RequestTimeMiddleware.cs:line 17
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-08-03 17:35:42.2030|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|Validate errors: That emiail is taken System.ArgumentException: Validate errors: That emiail is taken
+   at WebAPI.Serivces.AccountServices.CreateUser(AccountDto account) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\AccountServices.cs:line 30
+   at WebAPI.Controllers.AccountContorler.Register(AccountDto dto) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\AccountContorler.cs:line 22
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\RequestTimeMiddleware.cs:line 17
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-08-03 17:35:42.6686|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|Validate errors: That emiail is taken System.ArgumentException: Validate errors: That emiail is taken
+   at WebAPI.Serivces.AccountServices.CreateUser(AccountDto account) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\AccountServices.cs:line 30
+   at WebAPI.Controllers.AccountContorler.Register(AccountDto dto) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\AccountContorler.cs:line 22
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\RequestTimeMiddleware.cs:line 17
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-08-03 17:35:43.3046|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|Validate errors: That emiail is taken System.ArgumentException: Validate errors: That emiail is taken
+   at WebAPI.Serivces.AccountServices.CreateUser(AccountDto account) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\AccountServices.cs:line 30
+   at WebAPI.Controllers.AccountContorler.Register(AccountDto dto) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\AccountContorler.cs:line 22
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\RequestTimeMiddleware.cs:line 17
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-08-03 17:35:43.8715|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|Validate errors: That emiail is taken System.ArgumentException: Validate errors: That emiail is taken
+   at WebAPI.Serivces.AccountServices.CreateUser(AccountDto account) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\AccountServices.cs:line 30
+   at WebAPI.Controllers.AccountContorler.Register(AccountDto dto) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\AccountContorler.cs:line 22
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\RequestTimeMiddleware.cs:line 17
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-08-03 17:36:30.4054|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 83ms  
+2023-08-03 17:36:30.6267|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 55ms  
+2023-08-03 17:36:34.1690|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-08-03 17:43:53.5754|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 119ms  
+2023-08-03 17:43:53.8925|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 63ms  
+2023-08-03 17:43:57.6345|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-08-03 17:43:59.7487|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|Validate errors: nie podzrawiam System.Exception: Validate errors: nie podzrawiam
+   at WebAPI.Serivces.AccountServices.CreateUser(AccountDto account) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\AccountServices.cs:line 28
+   at WebAPI.Controllers.AccountContorler.Register(AccountDto dto) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\AccountContorler.cs:line 22
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\RequestTimeMiddleware.cs:line 17
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-08-03 17:44:11.9641|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 180ms  
+2023-08-03 17:46:09.7279|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 0ms  
+2023-08-03 17:46:20.5165|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 0ms  
+2023-08-03 17:46:25.5266|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 0ms  
+2023-08-03 17:46:40.0681|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 115ms  
+2023-08-03 17:46:40.3300|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 58ms  
+2023-08-03 17:46:44.2269|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2023-08-03 17:46:44.2269|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 1ms  
+2023-08-03 17:46:49.1061|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 0ms  
+2023-08-03 17:46:49.7801|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 0ms  
+2023-08-03 17:46:50.5412|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 0ms  
+2023-08-03 17:46:51.7477|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 0ms  
+2023-08-03 17:46:52.6629|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 0ms  
+2023-08-03 17:47:23.4139|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|Validate errors: nie podzrawiam System.Exception: Validate errors: nie podzrawiam
+   at WebAPI.Serivces.AccountServices.CreateUser(AccountDto account) in C:\Users\macie\source\repos\WebAPI\WebAPI\Serivces\AccountServices.cs:line 28
+   at WebAPI.Controllers.AccountContorler.Register(AccountDto dto) in C:\Users\macie\source\repos\WebAPI\WebAPI\Controllers\AccountContorler.cs:line 22
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\RequestTimeMiddleware.cs:line 17
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\macie\source\repos\WebAPI\WebAPI\Middleware.cs\ErrorHandlingMiddlewarecs.cs:line 18
+2023-08-03 17:47:45.0608|0|ERROR|WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs|Validate errors: That emiail is taken System.Exception: Validate errors: That emiail is taken
+   at WebAPI.Serivces.AccountServices.CreateUser(AccountDto account)
+   at WebAPI.Controllers.AccountContorler.Register(AccountDto dto)
+   at lambda_method16(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebAPI.Middleware.cs.RequestTimeMiddleware.InvokeAsync(HttpContext context, RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at WebAPI.Middleware.cs.ErrorHandlingMiddlewarecs.InvokeAsync(HttpContext context, RequestDelegate next)
+2023-08-03 17:47:46.0698|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 10ms  
+2023-08-03 17:47:46.2163|0|WARN|WebAPI.Middleware.cs.RequestTimeMiddleware|To zapytanie trwało: 4ms  
