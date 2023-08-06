@@ -12,13 +12,9 @@ namespace WebAPI.Models
         public bool HasDelivery { get; set; }
         public string ContactEmail { get; set; }
         public string ContactNumber { get; set; }
-
-        [Required]
-        public string City { get; set; }
-
-        [Required]
-        public string Street { get; set; }
-        [Required]
-        public string PostalCode { get; set; }
+        public string? City { get; set; }
+        public string? Street { get; set; }
+        public string? PostalCode { get; set; }
+        public List<DishDto> Dishes { get; set; }
     }
 }

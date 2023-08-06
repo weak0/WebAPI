@@ -88,39 +88,7 @@ namespace WebAPI
 
                 }
             };
-            Restaurant r2 = new Restaurant()
-            {
-                Name = "Bazyliana",
-                Category = "Pizza",
-                Description = "Pizza like in italy",
-                ContactEmail = "kokoeurospoko@test.pl",
-                ContactNumber = "2",
-                HasDelivery = true,
-                Dishes = new List<Dish>()
-                {
-                new Dish()
-                {
-                    Name = "Pizza Peproni",
-                    Description ="juju",
-                    Price = 12.3M,
-
-                },
-                new Dish()
-                {
-                    Name = "Pizza Casablanka",
-                    Description = "jeje",
-                    Price = 18.5M,
-
-                },
-                },
-                Addres = new Addres()
-                {
-                    City = "Katowice",
-                    PostalCode = "40-231",
-                    Street = "Jana Pawła"
-
-                }
-            };
+            Restaurant r2 = new Restaurant();
             result.Add(r2);
             result.Add(r1);
             return result;

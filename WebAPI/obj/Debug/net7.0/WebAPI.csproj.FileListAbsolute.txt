@@ -81,3 +81,4 @@ C:\Users\macie\source\repos\WebAPI\WebAPI\bin\Debug\net7.0\NLog.dll
 C:\Users\macie\source\repos\WebAPI\WebAPI\bin\Debug\net7.0\NLog.Extensions.Logging.dll
 C:\Users\macie\source\repos\WebAPI\WebAPI\bin\Debug\net7.0\NLog.Web.AspNetCore.dll
 C:\Users\macie\source\repos\WebAPI\WebAPI\bin\Debug\net7.0\FluentValidation.dll
+C:\Users\macie\source\repos\WebAPI\WebAPI\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

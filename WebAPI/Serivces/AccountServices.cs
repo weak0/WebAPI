@@ -2,7 +2,9 @@
 using FluentValidation;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Query.Internal;
 using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using WebAPI.Entities;
@@ -17,13 +19,16 @@ namespace WebAPI.Serivces
         private readonly IMapper _mapper;
         private readonly IPasswordHasher<User> _passwordHasher;
         private readonly IValidator<AccountDto> _accountValidator;
+        private readonly AuthenticationSettings _authenticationSettings;
 
-        public AccountServices(RestaurantDbContext dbContext, IMapper mapper, IPasswordHasher<User> passwordHasher, IValidator<AccountDto> accountValidator)
+        public AccountServices(RestaurantDbContext dbContext, IMapper mapper, IPasswordHasher<User> passwordHasher,
+            IValidator<AccountDto> accountValidator, AuthenticationSettings authenticationSettings)
         {
             _dbContext = dbContext;
             _mapper = mapper;
             _passwordHasher = passwordHasher;
             _accountValidator = accountValidator;
+            _authenticationSettings = authenticationSettings;
         }
 
         public int CreateUser(AccountDto account)
@@ -36,7 +41,9 @@ namespace WebAPI.Serivces
             {
                 Email = account.Email,
                 Name = account.Name,
+                DateOfBirth = account.DateOfBirth,
                 RoleId = 1
+
 
             };
             var hasshedPassword = _passwordHasher.HashPassword(user, account.Password);
@@ -66,9 +73,22 @@ namespace WebAPI.Serivces
             new Claim(ClaimTypes.Name, user.Name.ToString()),
             new Claim(ClaimTypes.Role, user.Role.Name.ToString()),
             new Claim(ClaimTypes.Email, user.Id.ToString()),
+            new Claim("DateOfBirth", user.DateOfBirth.ToString())
             };
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes())
-            return "tomek chuj";
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_authenticationSettings.JwtKey));
+            var cred = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+            var expires = DateTime.Now.AddDays(_authenticationSettings.JwtExpireDays);
+            var token = new JwtSecurityToken(
+                issuer: _authenticationSettings.JwtIssuer,
+                audience: _authenticationSettings.JwtIssuer,
+                claims: claims,
+                expires: expires,
+                signingCredentials: cred
+                );
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var generatedToken = tokenHandler.WriteToken(token);
+
+            return generatedToken;
         } 
     }
 }

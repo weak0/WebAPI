@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using WebAPI.Models;
 using WebAPI.Serivces;
 
@@ -16,6 +17,7 @@ namespace WebAPI.Controllers
             _restaurantService = restauranServices;
         }
         [HttpGet]
+        [Authorize(Policy = "Atleast18")]
         public ActionResult<IEnumerable<RestaurantDto>> GetAll()
         {
             var resutarants = _restaurantService.GetAll();
@@ -23,6 +25,7 @@ namespace WebAPI.Controllers
         }
 
         [HttpGet("{id}")]
+        [AllowAnonymous]
         public ActionResult<RestaurantDto> Get([FromRoute] int id)
         {
             var restaurant = _restaurantService.GetById(id);

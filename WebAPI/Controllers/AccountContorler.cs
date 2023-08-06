@@ -26,7 +26,7 @@ namespace WebAPI.Controllers
         [HttpPost("login")]
         public ActionResult Login([FromBody] LoginDto dto)
         {
-            var token = _accountService.GenerateJwt(dto);
+            var token = _accountService.GenearteToken(dto);
             return Ok(token);
         }
     }

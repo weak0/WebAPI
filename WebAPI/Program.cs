@@ -1,10 +1,12 @@
 using FluentValidation;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
 using NLog;
 using NLog.Web;
 using System.Text;
 using WebAPI;
+using WebAPI.Authorization;
 using WebAPI.Entities;
 using WebAPI.Middleware.cs;
 using WebAPI.Models;
@@ -15,19 +17,20 @@ var logger = NLog.LogManager.Setup().LoadConfigurationFromAppSettings().GetCurre
 logger.Debug("init main");
 
 try
-{ 
+{
     var authetiactionSettings = new AuthenticationSettings();
-    
+
     var builder = WebApplication.CreateBuilder(args);
     builder.Configuration.GetSection("Authentication").Bind(authetiactionSettings);
+
     builder.Logging.ClearProviders();
     builder.Host.UseNLog();
     builder.Services.AddAuthentication(options =>
     {
-      options.DefaultAuthenticateScheme = "Bearer";
-      options.DefaultScheme = "Bearer";
-      options.DefaultChallengeScheme = "Bearer";
-        
+        options.DefaultAuthenticateScheme = "Bearer";
+        options.DefaultScheme = "Bearer";
+        options.DefaultChallengeScheme = "Bearer";
+
     }).AddJwtBearer(cfg =>
     {
         cfg.RequireHttpsMetadata = false;
@@ -39,7 +42,12 @@ try
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(authetiactionSettings.JwtKey)),
         };
     });
+    builder.Services.AddAuthorization(options =>
+    {
+        options.AddPolicy("Atleast18", builder => builder.Requirements.Add(new MinimumAgeRequirments(18)));
+    });
     builder.Services.AddControllers();
+    builder.Services.AddScoped<IAuthorizationHandler, MinimumAgeRequirmentHandler>();
     builder.Services.AddDbContext<RestaurantDbContext>();
     builder.Services.AddEndpointsApiExplorer();
     builder.Services.AddSwaggerGen();
@@ -51,7 +59,7 @@ try
     builder.Services.AddScoped<IValidator<AccountDto>, AccountDtoValidation>();
     builder.Services.AddScoped<ErrorHandlingMiddlewarecs>();
     builder.Services.AddScoped<RequestTimeMiddleware>();
-    builder.Services.AddScoped<AuthenticatedEncryptionProvider>();
+    builder.Services.AddSingleton(authetiactionSettings);
     var app = builder.Build();
     // Configure the HTTP request pipeline.
     if (app.Environment.IsDevelopment())
@@ -71,6 +79,7 @@ try
     }
 
     app.UseHttpsRedirection();
+    app.UseAuthorization();
     app.MapControllers();
     app.Run();
 
